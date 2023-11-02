@@ -4,7 +4,9 @@ const DB = "mongodb+srv://root:root@cluster0.aib2q62.mongodb.net/Authuser?retryW
 
 mongoose.connect(DB,{
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    // useCreateIndex: true,
+    // useFindAndModify: true,
 }).then(()=> console.log("DataBase Connected")).catch((errr)=>{
     console.log(errr);
 })
