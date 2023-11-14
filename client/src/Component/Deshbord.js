@@ -4,8 +4,6 @@ import { LoginContext } from './ContextProvider/context';
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
-{/* <h1>this is so owsome</h1> */}
-
 
 const Deshbord = () => {
 

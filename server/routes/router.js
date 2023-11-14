@@ -5,15 +5,15 @@ const bcrypt = require("bcryptjs")
 const authorization = require("../middlewere/authentication")
 const nodemailer = require("nodemailer")
 const jwt = require("jsonwebtoken");
-const keySecret = "niteshnikkilouvashikhalwamduelshiej"
+const keySecret = process.env.JWT_SECRETKEY
 
 
 // Emai config 
 const transporter = nodemailer.createTransport({
     service:"gmail",
     auth:{
-        user:"niteshlovanshi109@gmail.com",
-        pass:"sdqqdsouikeqoigr"
+        user: process.env.NODEMAILER_USER,
+        pass: process.env.NODEMAILER_PASSWD
     }
 })
 
